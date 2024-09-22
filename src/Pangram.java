@@ -1,7 +1,7 @@
 import java.util.HashMap ;
 import java.util.Scanner ;
 
-public class Main{
+public class Pangram {
     public static void main (String[] args){
         Scanner scan = new Scanner (System.in) ;
         int n = scan.nextInt () ;
