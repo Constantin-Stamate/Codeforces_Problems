@@ -1,18 +1,18 @@
 package codeforces;
 
-import java.util.HashMap ;
-import java.util.Map ;
-import java.util.Scanner ;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
-public class Joke{
-    public static void main (String[] args) {
-        Scanner scan = new Scanner (System.in) ;
-        String a = scan.nextLine() ;
-        String b = scan.nextLine() ;
-        String c = scan.nextLine() ;
+public class Joke {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String a = scan.nextLine();
+        String b = scan.nextLine();
+        String c = scan.nextLine();
 
-        if (a.length() + b.length() != c.length()) System.out.println ("NO") ;
-        else{
+        if (a.length() + b.length() != c.length()) System.out.println("NO");
+        else {
             Map<Character, Integer> map = new HashMap<Character, Integer>();
             Map<Character, Integer> tap = new HashMap<Character, Integer>();
 
@@ -25,15 +25,15 @@ public class Joke{
             for (char p : c.toCharArray())
                 tap.put(p, tap.getOrDefault(p, 0) + 1);
 
-            boolean q = false ;
+            boolean q = false;
             for (char key : map.keySet())
-                if (!map.get(key).equals(tap.get(key))){
-                    q = true ;
-                    break ;
+                if (!map.get(key).equals(tap.get(key))) {
+                    q = true;
+                    break;
                 }
 
-            String h = q ? "NO" : "YES" ;
-            System.out.println (h) ;
+            String h = q ? "NO" : "YES";
+            System.out.println(h);
         }
     }
 }
