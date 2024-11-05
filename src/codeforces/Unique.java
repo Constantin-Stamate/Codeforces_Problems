@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Unique {
     public static void main(String[] args) {
-        Scanner scan = new Scanner (System.in);
+        Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();
         for (int i = 0; i < t; i++) {
             int a = scan.nextInt();
@@ -16,8 +16,7 @@ public class Unique {
 
     public static int uniqueNumber(int a, int b, int c) {
         if (a == b) return c;
-        else
-            if (a == c) return b;
+        else if (a == c) return b;
         else return a;
     }
 }
