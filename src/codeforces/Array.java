@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Array {
     public static void main(String[] args) {
-        Scanner scan = new Scanner (System.in);
+        Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();
 
         for (int i = 0; i < t; i++) {
@@ -18,14 +18,14 @@ public class Array {
         int s = 0;
         int y = 1;
         if ((n / 2) % 2 == 1) System.out.println("NO");
-        else{
+        else {
             System.out.println("YES");
-            for (int j=1; j<=n/2; j++){
+            for (int j = 1; j <= n / 2; j++) {
                 System.out.print(x + " ");
                 s += x;
                 x += 2;
             }
-            for (int k=n/2+1; k<n; k++){
+            for (int k = n / 2 + 1; k < n; k++) {
                 System.out.print(y + " ");
                 s -= y;
                 y += 2;
