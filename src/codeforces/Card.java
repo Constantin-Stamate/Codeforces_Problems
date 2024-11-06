@@ -54,14 +54,12 @@ public class Card {
 
             serejaTurn = !serejaTurn;
         }
-
         return new int[]{count1, count2};
     }
 
     public static void displayArray(int[] sir) {
         for (int num : sir) {
             System.out.print(num + " ");
-
         }
     }
 }
