@@ -38,9 +38,6 @@ public class SpellCheck {
         for (char c : a.toCharArray()) {
             targetSet.add(c);
         }
-
-
-
         return targetSet;
     }
 }
