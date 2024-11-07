@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Words {
     public static void main(String[] args) {
-        Scanner scan  = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();
         scan.nextLine();
 
@@ -35,5 +35,4 @@ public class Words {
     public static char[] transformString(String f) {
         return f.toCharArray();
     }
-
 }
