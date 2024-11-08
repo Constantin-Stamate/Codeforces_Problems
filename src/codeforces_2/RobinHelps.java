@@ -29,7 +29,7 @@ public class RobinHelps {
         int rez = 0;
         for (int i = 0; i < n; i++) {
             if (arr[i] >= k) count += arr[i];
-            else if (arr[i] == 0 && count >= 1){
+            else if (arr[i] == 0 && count >= 1) {
                 count--;
                 rez++;
             }
