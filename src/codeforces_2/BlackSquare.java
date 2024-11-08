@@ -3,12 +3,11 @@ package codeforces_2;
 import java.util.Scanner;
 
 public class BlackSquare {
-    static Scanner scan  = new Scanner(System.in);
+    static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) {
         int[] sir = createArray();
         scan.nextLine();
-
-
         String s = scan.nextLine();
         System.out.println(numberOfCalories(sir, s));
     }
@@ -25,7 +24,7 @@ public class BlackSquare {
         int count = 0;
         for (int i = 0; i < s.length(); i++) {
             int d = s.charAt(i) - '0';
-            count += arr[d-1];
+            count += arr[d - 1];
         }
         return count;
     }
