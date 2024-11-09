@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class RemoveSmallest {
-    static Scanner scan  = new Scanner(System.in);
+    static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
         int t = scan.nextInt();
@@ -37,6 +37,5 @@ public class RemoveSmallest {
             if (possible) System.out.println("YES");
             else System.out.println("NO");
         }
-
     }
 }
