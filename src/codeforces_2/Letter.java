@@ -20,9 +20,5 @@ public class Letter {
         } else {
             System.out.println("NO");
         }
-
-
-
-
     }
 }
