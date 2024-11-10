@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class TwoIntegers {
     static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) {
         int t = scan.nextInt();
         for (int i = 0; i < t; i++) {
@@ -17,6 +18,4 @@ public class TwoIntegers {
         int diff = Math.abs(b - a);
         return diff / 10 + (diff % 10 == 0 ? 0 : 1);
     }
-
-
 }
