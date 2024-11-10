@@ -29,5 +29,4 @@ public class Eraser {
         }
         return count;
     }
-
 }
