@@ -31,8 +31,7 @@ public class Ballons {
             if (!visited[ch]) {
                 count += 2;
                 visited[ch] = true;
-            }
-            else {
+            } else {
                 count++;
             }
         }
