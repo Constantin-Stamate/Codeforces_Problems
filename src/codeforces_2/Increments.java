@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Increments {
     static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) {
         int t = scan.nextInt();
         for (int i = 0; i < t; i++) {
@@ -27,20 +28,16 @@ public class Increments {
             if (i % 2 == 0) {
                 if (arr[i] % 2 == 0) {
                     pozParePar++;
-                }
-                else pozPareImp++;
-            }
-            else {
+                } else pozPareImp++;
+            } else {
                 if (arr[i] % 2 == 0) {
                     pozImparePar++;
-                }
-                else pozImpareImp++;
+                } else pozImpareImp++;
             }
         }
         if ((pozImparePar > 0 && pozImpareImp > 0) || (pozPareImp > 0 && pozParePar > 0)) {
             System.out.println("NO");
-        }
-        else {
+        } else {
             System.out.println("YES");
         }
     }
