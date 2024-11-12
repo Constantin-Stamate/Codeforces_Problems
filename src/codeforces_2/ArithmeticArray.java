@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class ArithmeticArray {
     static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) {
         int t = scan.nextInt();
         for (int i = 0; i < t; i++) {
@@ -32,7 +33,7 @@ public class ArithmeticArray {
         } else if (sum < n) {
             return 1;
         } else {
-            return Math.abs(sum) - n;
+            return sum - n;
         }
     }
 }
