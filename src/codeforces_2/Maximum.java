@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Maximum {
     static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) {
         int t = scan.nextInt();
         for (int i = 0; i < t; i++) {
@@ -29,5 +30,4 @@ public class Maximum {
         }
         return min - 1;
     }
-
 }
