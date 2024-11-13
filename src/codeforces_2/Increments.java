@@ -10,7 +10,7 @@ public class Increments {
         for (int i = 0; i < t; i++) {
             int n = scan.nextInt();
             int[] arr = createArray(n);
-            onlySameNumbers(arr, n);
+            onlyNumbers(arr, n);
         }
     }
 
@@ -22,7 +22,7 @@ public class Increments {
         return arr;
     }
 
-    public static void onlySameNumbers(int[] arr, int n) {
+    public static void onlyNumbers(int[] arr, int n) {
         int pozImpareImp = 0, pozImparePar = 0, pozPareImp = 0, pozParePar = 0;
         for (int i = 0; i < n; i++) {
             if (i % 2 == 0) {
