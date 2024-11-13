@@ -17,9 +17,9 @@ public class Detection {
             }
             list.add(findIndex(arr));
         }
+
         for (Integer i : list) {
             System.out.println(i);
-
         }
     }
 
