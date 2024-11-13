@@ -6,7 +6,6 @@ public class Borze {
     public static void main(String[] args) {
         Scanner scan = new Scanner (System.in);
         String alp = scan.nextLine();
-
         System.out.println(decodeAlphabet(alp));
     }
 
