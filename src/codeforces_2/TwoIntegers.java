@@ -10,11 +10,11 @@ public class TwoIntegers {
         for (int i = 0; i < t; i++) {
             int a = scan.nextInt();
             int b = scan.nextInt();
-            System.out.println(numberOfMoves(a, b));
+            System.out.println(findNumberOfMoves(a, b));
         }
     }
 
-    public static int numberOfMoves(int a, int b) {
+    public static int findNumberOfMoves(int a, int b) {
         int diff = Math.abs(b - a);
         return diff / 10 + (diff % 10 == 0 ? 0 : 1);
     }
