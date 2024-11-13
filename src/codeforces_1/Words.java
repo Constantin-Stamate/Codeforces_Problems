@@ -14,7 +14,6 @@ public class Words {
 
             char[] arr1 = transformString(a);
             char[] arr2 = transformString(b);
-
             creatingWords(arr1, arr2);
         }
     }
