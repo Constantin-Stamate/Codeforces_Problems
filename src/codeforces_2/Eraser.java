@@ -11,7 +11,6 @@ public class Eraser {
             int k = scan.nextInt();
             scan.nextLine();
             String s = scan.next();
-
             System.out.println(numberOfOperations(n, k, s));
         }
     }
