@@ -10,11 +10,11 @@ public class Choice {
             int a = scan.nextInt();
             int b = scan.nextInt();
             int c = scan.nextInt();
-            determineWhether(a, b, c);
+            determineTypeOfWhether(a, b, c);
         }
     }
 
-    public static void determineWhether(int a, int b, int c) {
+    public static void determineTypeOfWhether(int a, int b, int c) {
         if (a < b && b < c) System.out.println("STAIR");
         else if (a < b && b > c) System.out.println("PEAK");
         else System.out.println("NONE");
