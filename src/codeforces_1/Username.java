@@ -8,7 +8,7 @@ public class Username {
     public static void main(String[] args) {
         int n = scan.nextInt();
         int[] arr = createdArray(n);
-        System.out.println(numberOfPerformances(n, arr));
+        System.out.println(numberOfTotalPerformances(n, arr));
     }
 
     public static int[] createdArray(int n) {
@@ -19,7 +19,7 @@ public class Username {
         return arr;
     }
 
-    public static int numberOfPerformances(int n, int[] arr) {
+    public static int numberOfTotalPerformances(int n, int[] arr) {
         int count = 0;
         int max = arr[0];
         int min = arr[0];
