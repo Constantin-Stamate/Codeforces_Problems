@@ -9,7 +9,7 @@ public class BlackSquare {
         int[] sir = createArray();
         scan.nextLine();
         String s = scan.nextLine();
-        System.out.println(numberOfCalories(sir, s));
+        System.out.println(numberOfTotalCalories(sir, s));
     }
 
     public static int[] createArray() {
@@ -20,7 +20,7 @@ public class BlackSquare {
         return arr;
     }
 
-    public static int numberOfCalories(int[] arr, String s) {
+    public static int numberOfTotalCalories(int[] arr, String s) {
         int count = 0;
         for (int i = 0; i < s.length(); i++) {
             int d = s.charAt(i) - '0';
