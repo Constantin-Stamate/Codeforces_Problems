@@ -10,10 +10,9 @@ public class Ballons {
             int n = scan.nextInt();
             scan.nextLine();
             String s = scan.nextLine();
-
             char[] arr = createCharArray(s);
             boolean[] visited = recordCharacter();
-            System.out.println(numberOfPoints(arr, visited));
+            System.out.println(numberTotalOfPoints(arr, visited));
         }
     }
 
@@ -25,7 +24,7 @@ public class Ballons {
         return new boolean[128];
     }
 
-    public static int numberOfPoints(char[] arr, boolean[] visited) {
+    public static int numberTotalOfPoints(char[] arr, boolean[] visited) {
         int count = 0;
         for (char ch : arr) {
             if (!visited[ch]) {
