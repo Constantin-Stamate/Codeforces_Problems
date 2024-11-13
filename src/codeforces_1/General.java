@@ -6,26 +6,53 @@ public class General {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int cnt1 = 0, cnt2 = 0, x = 9999999, y = -9999999;
         int n = scan.nextInt();
-        int[] sir = new int[n];
-        for (int i = 0; i < n; i++)
-            sir[i] = scan.nextInt();
+        int[] sir = readArray(n, scan);
 
-        for (int i = 0; i < n; i++)
-            if (sir[i] <= x) {
-                x = sir[i];
-                cnt1 = i;
+        int minIndex = findMinIndex(sir);
+        int maxIndex = findMaxIndex(sir);
+
+        int moves = calculateMoves(n, minIndex, maxIndex);
+        System.out.println(moves);
+    }
+
+    public static int[] readArray(int n, Scanner scan) {
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scan.nextInt();
+        }
+        return arr;
+    }
+
+    public static int findMinIndex(int[] arr) {
+        int minIndex = 0;
+        int minValue = Integer.MAX_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] <= minValue) {
+                minValue = arr[i];
+                minIndex = i;
             }
+        }
+        return minIndex;
+    }
 
-        for (int i = n - 1; i >= 0; i--)
-            if (sir[i] >= y) {
-                y = sir[i];
-                cnt2 = i;
+    public static int findMaxIndex(int[] arr) {
+        int maxIndex = 0;
+        int maxValue = Integer.MIN_VALUE;
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] >= maxValue) {
+                maxValue = arr[i];
+                maxIndex = i;
             }
+        }
+        return maxIndex;
+    }
 
-        if (cnt1 < cnt2) System.out.println(cnt2 + (n - cnt1 - 2));
-        else
-            System.out.println(cnt2 + (n - cnt1 - 1));
+    public static int calculateMoves(int n, int minIndex, int maxIndex) {
+        if (minIndex < maxIndex) {
+            return maxIndex + (n - minIndex - 2);
+        } else {
+            return maxIndex + (n - minIndex - 1);
+        }
     }
 }
