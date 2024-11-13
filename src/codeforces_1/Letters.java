@@ -14,6 +14,5 @@ public class Letters {
             if (b >= 'a' && b <= 'z') map.put(b, map.getOrDefault(b, 0) + 1);
 
         System.out.println(map.size());
-
     }
 }
