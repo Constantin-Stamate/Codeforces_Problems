@@ -27,7 +27,6 @@ public class ArithmeticArray {
         for (int i = 0; i < n; i++) {
             sum += arr[i];
         }
-
         if (sum == n) {
             return 0;
         } else if (sum < n) {
