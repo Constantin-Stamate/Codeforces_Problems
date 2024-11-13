@@ -17,7 +17,6 @@ public class Apartments {
         int count = 1;
         int ind = 1;
         int evd = 1;
-
         while (count != n) {
             sum += evd;
             evd++;
