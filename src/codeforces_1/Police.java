@@ -8,7 +8,7 @@ public class Police {
     public static void main(String[] args) {
         int n = scan.nextInt();
         int[] arr = createArray(n);
-        System.out.println(numberOfCrimes(n, arr));
+        System.out.println(numberOfTotalCrimes(n, arr));
     }
 
     public static int[] createArray(int n) {
@@ -19,7 +19,7 @@ public class Police {
         return arr;
     }
 
-    public static int numberOfCrimes(int n, int[] arr) {
+    public static int numberOfTotalCrimes(int n, int[] arr) {
         int count = 0, max = 999999;
         for (int i = 0; i < n; i++) {
             count += arr[i];
