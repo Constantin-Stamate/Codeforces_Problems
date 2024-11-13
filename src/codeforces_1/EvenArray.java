@@ -25,7 +25,6 @@ public class EvenArray {
             if (arr[i] % 2 == 0) par++;
             else impar++;
         }
-
         if ((n % 2 == 0 && par != impar) || (n % 2 == 1 && par != impar + 1)) return -1;
         else if (count % 2 != 0) return -1;
         else return count / 2;
