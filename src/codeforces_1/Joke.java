@@ -26,6 +26,7 @@ public class Joke {
                 tap.put(p, tap.getOrDefault(p, 0) + 1);
 
             boolean q = false;
+
             for (char key : map.keySet())
                 if (!map.get(key).equals(tap.get(key))) {
                     q = true;
