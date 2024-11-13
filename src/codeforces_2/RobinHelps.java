@@ -11,7 +11,6 @@ public class RobinHelps {
             int n = scan.nextInt();
             int k = scan.nextInt();
             int[] arr = createArray(n);
-
             System.out.println(numberOfPeople(n, arr, k));
         }
     }
