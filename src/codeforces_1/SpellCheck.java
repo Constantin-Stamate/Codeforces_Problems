@@ -19,7 +19,6 @@ public class SpellCheck {
         if (n != 5) System.out.println("NO");
         else {
             HashSet<Character> targetSet = spellTimur("Timur");
-
             HashSet<Character> spellSet = new HashSet<Character>();
             for (char c : s.toCharArray()) {
                 spellSet.add(c);
