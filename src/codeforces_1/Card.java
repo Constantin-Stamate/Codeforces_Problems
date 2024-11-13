@@ -36,8 +36,8 @@ public class Card {
         while (!list.isEmpty()) {
             int left = list.get(0);
             int right = list.get(list.size() - 1);
-
             int chosenCard;
+
             if (left >= right) {
                 chosenCard = left;
                 list.remove(0);
@@ -45,13 +45,11 @@ public class Card {
                 chosenCard = right;
                 list.remove(list.size() - 1);
             }
-
             if (serejaTurn) {
                 count1 += chosenCard;
             } else {
                 count2 += chosenCard;
             }
-
             serejaTurn = !serejaTurn;
         }
         return new int[]{count1, count2};
