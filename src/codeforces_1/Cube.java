@@ -11,7 +11,6 @@ public class Cube {
 
     public static int heightOfThePyramid(int n) {
         int rez = 0, s = 1, p = 2;
-
         while (s <= n) {
             rez++;
             n -= s;
