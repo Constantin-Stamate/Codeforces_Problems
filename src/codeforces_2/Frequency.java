@@ -9,11 +9,11 @@ public class Frequency {
         int t = scan.nextInt();
         for (int i = 0; i < t; i++) {
             String s = scan.next();
-            System.out.println(frequencyOfCharacters(s));
+            System.out.println(frequencyTotalOfCharacters(s));
         }
     }
 
-    public static Character frequencyOfCharacters(String s) {
+    public static Character frequencyTotalOfCharacters(String s) {
         int frequency = 0;
         char w = 0;
         HashMap<Character, Integer> map = new HashMap<>();
