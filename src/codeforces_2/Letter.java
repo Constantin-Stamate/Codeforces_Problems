@@ -7,14 +7,13 @@ public class Letter {
         Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();
         scan.nextLine();
-
         for (int i = 0; i < t; i++) {
             String s = scan.next();
-            verificationString(s);
+            verificateString(s);
         }
     }
 
-    public static void verificationString(String s) {
+    public static void verificateString(String s) {
         if (s.equalsIgnoreCase("YES")) {
             System.out.println("YES");
         } else {
