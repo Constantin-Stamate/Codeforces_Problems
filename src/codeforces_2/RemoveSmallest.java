@@ -11,7 +11,7 @@ public class RemoveSmallest {
         for (int i = 0; i < t; i++) {
             int n = scan.nextInt();
             int[] arr = createArray(n);
-            onlyOneElement(arr, n);
+            oneElement(arr, n);
         }
     }
 
@@ -23,7 +23,7 @@ public class RemoveSmallest {
         return a;
     }
 
-    public static void onlyOneElement(int[] a, int n) {
+    public static void oneElement(int[] a, int n) {
         if (n == 1) System.out.println("YES");
         else {
             Arrays.sort(a);
