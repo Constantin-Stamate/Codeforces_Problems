@@ -9,11 +9,11 @@ public class Square {
         for (int i = 0; i < t; i++) {
             int a = scan.nextInt();
             int b = scan.nextInt();
-            System.out.println(minimumAreaOfSquare(a, b));
+            System.out.println(minimumArea(a, b));
         }
     }
 
-    public static int minimumAreaOfSquare(int a, int b) {
+    public static int minimumArea(int a, int b) {
         int rez = 0;
         if (a >= b) rez = Math.max(a, b * 2);
         else rez = Math.max(a * 2, b);
