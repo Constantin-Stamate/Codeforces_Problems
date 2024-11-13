@@ -10,7 +10,7 @@ public class Maximum {
         for (int i = 0; i < t; i++) {
             int n = scan.nextInt();
             int[] arr = createArray(n);
-            System.out.println(findMinimum(arr, n));
+            System.out.println(findMinimumNumber(arr, n));
         }
     }
 
@@ -22,7 +22,7 @@ public class Maximum {
         return arr;
     }
 
-    public static int findMinimum(int[] arr, int n) {
+    public static int findMinimumNumber(int[] arr, int n) {
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < n - 1; i++) {
             int maxPair = Math.max(arr[i], arr[i + 1]);
