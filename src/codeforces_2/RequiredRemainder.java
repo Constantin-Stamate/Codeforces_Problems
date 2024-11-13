@@ -11,11 +11,11 @@ public class RequiredRemainder {
             int x = scan.nextInt();
             int y = scan.nextInt();
             int n = scan.nextInt();
-            System.out.println(maximumNumber(x, y, n));
+            System.out.println(findMaximumNumber(x, y, n));
         }
     }
 
-    public static int maximumNumber(int x, int y, int n) {
+    public static int findMaximumNumber(int x, int y, int n) {
         int count = (n - y) / x;
         return count * x + y;
     }
