@@ -8,11 +8,11 @@ public class SumDigits {
         int t = scan.nextInt();
         for (int i = 0; i < t; i++) {
             int n = scan.nextInt();
-            System.out.println(sumOfDigits(n));
+            System.out.println(sumDigits(n));
         }
     }
 
-    public static int sumOfDigits(int n) {
+    public static int sumDigits(int n) {
         int sum = 0;
         while (n != 0) {
             sum += n % 10;
