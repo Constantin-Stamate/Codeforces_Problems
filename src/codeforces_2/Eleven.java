@@ -21,7 +21,6 @@ public class Eleven {
         return rez.toString();
     }
 
-
     public static boolean isFibonacci(int x) {
         return isPerfectSquare(5 * x * x + 4) || isPerfectSquare(5 * x * x - 4);
     }
