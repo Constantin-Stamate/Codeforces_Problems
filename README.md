@@ -29,7 +29,7 @@ Each `.java` file inside these folders contains:
 ## ⚙️ How to Run the Project
 
 1. **Install Java (JDK 8 or later)**  
-   👉 Download from: [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
+   Download from: [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
 
 
 2. **Clone the repository**
