@@ -1,16 +1,16 @@
-# 🧠 Codeforces Problems – Algorithm Practice Archive
+# Codeforces Problems – Algorithm Practice Archive
 
 This Java project is a structured collection of **algorithmic problem solutions** inspired by challenges from [Codeforces](https://codeforces.com/). It is designed to improve competitive programming skills, focusing on **clean code**, **problem-solving patterns**, and general **algorithmic thinking** using Java.
 
 ---
 
-## 🧾 Project Context
+## Project Context
 
 This repository was developed as part of continuous practice for mastering algorithms and data structures, commonly used in contests and technical interviews. It includes both **introductory problems** and more **advanced challenges**.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -26,7 +26,7 @@ Each `.java` file inside these folders contains:
 
 ---
 
-## ⚙️ How to Run the Project
+## How to Run the Project
 
 1. **Install Java (JDK 8 or later)**  
    Download from: [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
@@ -66,7 +66,7 @@ Each `.java` file inside these folders contains:
 
 ---
 
-## 📚 Useful Resources
+## Useful Resources
 
 - [Codeforces](https://codeforces.com/) – Official competitive programming platform
 - [CP-Algorithms](https://cp-algorithms.com/) – Comprehensive algorithm reference
@@ -75,7 +75,7 @@ Each `.java` file inside these folders contains:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 This repository is maintained by **Constantin Stamate**, as part of algorithmic problem-solving and Java practice.
 
