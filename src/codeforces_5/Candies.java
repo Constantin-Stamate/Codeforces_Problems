@@ -13,11 +13,11 @@ public class Candies {
         }
     }
 
-    public static int readCandiesCount() {
+    private static int readCandiesCount() {
         return scan.nextInt();
     }
 
-    public static int calculateAdditionalCandies(int n) {
+    private static int calculateAdditionalCandies(int n) {
         if (n % 3 == 0) {
             return 0;
         }

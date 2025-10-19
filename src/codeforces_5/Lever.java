@@ -15,11 +15,11 @@ public class Lever {
         }
     }
 
-    public static int readArraySize() {
+    private static int readArraySize() {
         return scan.nextInt();
     }
 
-    public static int[] readArray(int n) {
+    private static int[] readArray(int n) {
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = scan.nextInt();
@@ -27,7 +27,7 @@ public class Lever {
         return arr;
     }
 
-    public static int computeIterations(int[] firstArray, int[] secondArray, int n) {
+    private static int computeIterations(int[] firstArray, int[] secondArray, int n) {
         int over = 0;
 
         for (int i = 0; i < n; i++) {
